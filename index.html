@@ -1,62 +1,305 @@
 <!-- Hamza Taqvim 26i3054 SE-B -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dhaba Menu</title>
+
+<title>Dhaba Menu - Home</title>
+
 <style>
-body
-{background-color:#ffffff;color:#4a2c11;font-family:Arial,sans-serif;margin:30px;}
-.header-container
-{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #8b4513;padding-bottom:15px;margin-bottom:30px;}
-.header-container h1
-{color:#8b4513;margin:0;font-size:2.2rem;}
-.header-container img
-{width:120px;height:120px;border-radius:8px;border:2px solid #8b4513;}
-h2
-{color:#8b4513;margin-bottom:10px;}
-table
-{width:100%;max-width:500px;border-collapse:collapse;margin-bottom:25px;}
-th,td
-{border:1px solid #8b4513;padding:10px;text-align:left;}
-th
-{background-color:#8b4513;color:#ffffff;}
-tr:nth-child(even)
-{background-color:#fdf8f5;}
-.order-btn
-{background-color:#8b4513;color:#ffffff;border:none;padding:12px 25px;font-size:1rem;border-radius:5px;cursor:pointer;}
-.order-btn:hover
-{background-color:#5c2e0b;}
-</style>
-</head>
-<body>
-<div class="header-container">
-<h1>Dhaba Menu</h1>
-<img src="images/dhaba_menu.webp" alt="Dhaba Food Image">
-</div>
-<h2>Menu Items</h2>
-<table>
-<thead>
-<tr>
-<th>Item Name</th>
-<th>Price (Rs)</th>
-</tr>
-</thead>
-<tbody>
-<tr><td>Paratha</td><td>70</td></tr>
-<tr><td>Fried Egg</td><td>80</td></tr>
-<tr><td>Chai</td><td>60</td></tr>
-<tr><td>Lassi</td><td>100</td></tr>
-<tr><td>Channay</td><td>150</td></tr>
-</tbody>
-</table>
-<button class="order-btn" onclick="placeOrder()">Order Now</button>
-<script>
-function placeOrder(){
-console.log("Order button was clicked for Dhaba Menu!");
-window.alert("Your order has been placed! Thank you for ordering from our Dhaba.");
+
+body {
+    background-color: #ffffff;
+    color: #4a2c11;
+    font-family: Arial, sans-serif;
+    margin: 30px;
 }
+
+/* Header */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #8b4513;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.header-container h1 {
+    color: #8b4513;
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.header-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    border: 2px solid #8b4513;
+}
+
+/* Navigation Bar */
+
+nav {
+    background-color: #8b4513;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f5d6b4;
+    text-decoration: underline;
+}
+
+/* Headings and Introduction */
+
+h2 {
+    color: #8b4513;
+    margin-bottom: 10px;
+}
+
+.intro {
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Menu Table */
+
+table {
+    width: 100%;
+    max-width: 500px;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+th, td {
+    border: 1px solid #8b4513;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #8b4513;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #fdf8f5;
+}
+
+/* Order Button */
+
+.order-btn {
+    background-color: #8b4513;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background-color: #5c2e0b;
+}
+
+/* Footer */
+
+footer {
+    background-color: #4a2c11;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    body {
+        margin: 15px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Website Header -->
+
+<div class="header-container">
+
+    <h1>Dhaba Menu</h1>
+
+    <img src="images/dhaba_menu.webp"
+    alt="Dhaba Food Image">
+
+</div>
+
+
+<!-- Navigation Bar -->
+
+<nav>
+
+    <a href="index.html">Home</a>
+
+    <a href="menu.html">Menu</a>
+
+    <a href="contact.html">Contact</a>
+
+</nav>
+
+
+<!-- Welcome Section -->
+
+<section class="intro">
+
+    <h2>Welcome to Our Dhaba!</h2>
+
+    <p>
+        Welcome to Dhaba Menu, where you can enjoy the
+        traditional taste of Pakistani food.
+        We offer delicious food items prepared with
+        care and served with love.
+    </p>
+
+    <p>
+        From crispy Parathas to fresh Chai, our Dhaba
+        brings you the authentic taste of traditional
+        Pakistani breakfast.
+    </p>
+
+    <p>
+        Explore our menu and discover your favourite
+        food items. We look forward to serving you!
+    </p>
+
+</section>
+
+
+<!-- Existing Menu Section -->
+
+<h2>Our Popular Menu Items</h2>
+
+<table>
+
+    <thead>
+
+        <tr>
+            <th>Item Name</th>
+            <th>Price (Rs)</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <td>Paratha</td>
+            <td>70</td>
+        </tr>
+
+        <tr>
+            <td>Fried Egg</td>
+            <td>80</td>
+        </tr>
+
+        <tr>
+            <td>Chai</td>
+            <td>60</td>
+        </tr>
+
+        <tr>
+            <td>Lassi</td>
+            <td>100</td>
+        </tr>
+
+        <tr>
+            <td>Channay</td>
+            <td>150</td>
+        </tr>
+
+    </tbody>
+
+</table>
+
+
+<!-- Existing Order Button -->
+
+<button class="order-btn" onclick="placeOrder()">
+
+    Order Now
+
+</button>
+
+
+<!-- Footer -->
+
+<footer>
+
+    <p><strong>Dhaba Menu</strong></p>
+
+    <p>
+        Serving delicious traditional Pakistani food.
+    </p>
+
+    <p>
+        Home | Menu | Gallery
+    </p>
+
+    <p>
+        &copy; 2026 Dhaba Menu. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- JavaScript Function -->
+
+<script>
+
+function placeOrder() {
+
+    console.log("Order button was clicked for Dhaba Menu!");
+
+    window.alert("Your order has been placed! Thank you for ordering from our Dhaba.");
+
+}
+
 </script>
+
 </body>
+
 </html>

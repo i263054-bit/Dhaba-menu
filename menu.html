@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhaba Menu - Food Menu</title>
+
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #4a2c11;
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #8b4513;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .header-container h1 {
+            color: #8b4513;
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        .header-container img {
+            width: 120px;
+            height: 120px;
+            border-radius: 8px;
+            border: 2px solid #8b4513;
+            object-fit: cover;
+        }
+
+        nav {
+            background-color: #8b4513;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-right: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f5d6b4;
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: #8b4513;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        table {
+            width: 100%;
+            max-width: 600px;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        th, td {
+            border: 1px solid #8b4513;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #8b4513;
+            color: #ffffff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fdf8f5;
+        }
+
+        .order-btn {
+            background-color: #8b4513;
+            color: #ffffff;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .order-btn:hover {
+            background-color: #5c2e0b;
+        }
+
+        footer {
+            background-color: #4a2c11;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 15px;
+            }
+
+            .header-container {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header-container">
+        <h1>Our Food Menu</h1>
+        <img src="images/dhaba_menu.webp" alt="Dhaba Food Image">
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <section>
+        <h2>Explore Our Delicious Menu</h2>
+
+        <p>
+            Enjoy the traditional taste of Pakistani food at our Dhaba.
+            We prepare fresh and delicious meals for our customers.
+            Explore our menu and choose your favourite items!
+        </p>
+    </section>
+
+    <h2>Food Items and Prices</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Item Name</th>
+                <th>Price (Rs)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Paratha</td>
+                <td>70</td>
+            </tr>
+
+            <tr>
+                <td>Fried Egg</td>
+                <td>80</td>
+            </tr>
+
+            <tr>
+                <td>Chai</td>
+                <td>60</td>
+            </tr>
+
+            <tr>
+                <td>Lassi</td>
+                <td>100</td>
+            </tr>
+
+            <tr>
+                <td>Channay</td>
+                <td>150</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button class="order-btn" onclick="placeOrder()">
+        Order Now
+    </button>
+
+    <footer>
+        <p><strong>Dhaba Menu</strong></p>
+        <p>Serving delicious traditional Pakistani food.</p>
+        <p>Home | Menu | Contact</p>
+        <p>© 2026 Dhaba Menu. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function placeOrder() {
+            console.log("Order button was clicked!");
+            window.alert("Thank you for ordering from our Dhaba!");
+        }
+    </script>
+
+</body>
+</html>
